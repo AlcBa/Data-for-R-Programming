@@ -22,7 +22,7 @@ We would like to get the carpark availability in Singapore on Christmas day noon
 
 1. Input “2023-12-25T:12:00:00” into the date_time field click Send.
 
-![](../data/Picture1.jpg)
+![](https://github.com/AlcBa/Data-for-R-Programming/raw/main/assets/Picture1.jpg)
 
 There are a few things to look out for in the output generated:
 
@@ -30,7 +30,7 @@ There are a few things to look out for in the output generated:
 - Code: this suggests if the request is successful or not. Commonly seen codes include 200 (successful), 400 (bad request), 404 (not found) and 501 (not implemented). Refer to <https://umbraco.com/knowledge-base/http-status-codes/> for more information.
 - Response body: this is the output that is generated based on the input parameters.
 
-![](../data/Picture2.jpg)
+![](https://github.com/AlcBa/Data-for-R-Programming/raw/main/assets/Picture2.jpg)
 
 2. Within R, there are several ways to get data from API sources:
 
@@ -112,7 +112,7 @@ Finding the right elements in a website to extract can be a challenge without so
 
 In this game, we are supposed to select elements of interests based on the instructions. For instance, in level 1, assuming that there is some information that is contained inside the plates (for now there is nothing) and we would like to extract it. We can extract that information by typing “plate” in the CSS editor and pressing Enter (See the instruction on the right), that would select all the plates that exist in the webpage. Hover over the plates to see the corresponding element in the HTML Viewer light up. Remember the things/keywords that you typed in the CSS editor, this will set precedence on what to expect in the web scraping example later.
 
-![](../data/Picture3.jpg)
+![](https://github.com/AlcBa/Data-for-R-Programming/raw/main/assets/Picture3.jpg)
 
 There are several ways to do web scraping. The harder way involves inspecting the elements (F12) of the website and finding the right keywords in order to extract the right elements. A much easier way is to use SelectorGadget which can be downloaded as an extension: <https://chromewebstore.google.com/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb>. This tool provides us with the required keywords when we click on an element on the website.
 
@@ -120,11 +120,11 @@ In this example, we will be getting the names of articles found in Channel News 
 
 1. Click on the extensions tab and press SelectorGadget to activate it. To be sure that SelectorGadget is activated, notice the appearance of an orange box whenever you hover your cursor onto something on the webpage. Also there is a popup on the bottom right of the website.
 
-![](../data/Picture4.jpg)
+![](https://github.com/AlcBa/Data-for-R-Programming/raw/main/assets/Picture4.jpg)
 
 2. To get the titles of the articles, click on any of the titles. Notice how the clicked title appears green and other titles are highlighted in yellow. This shows all elements that are selected as well. Also notice the keyword that appears in the popup at the bottom. This is the keyword `.list-object__heading-link` required to select all the elements that are in green and yellow.
 
-![](../data/Picture5.jpg)
+![](https://github.com/AlcBa/Data-for-R-Programming/raw/main/assets/Picture5.jpg)
 
 3. Moving on to R, remember to install the package rvest, which contains functions to help us in web scraping. Execute the following code below. `html_nodes` function will extract all the relevant information that is contained within the html script based on the keyword provided. Print nodes to get an idea of what is being extracted. 
 
@@ -155,5 +155,5 @@ Tips:
 1. Several elements can be selected by SelectorGadget and SelectorGadget could still output a single keyword in some cases. Hence, `html_nodes` only needs to run once.
 2. Using SelectorGadget might involve some trial and error to get all the relevant information that the user needs to. For the above example, notice how the main article title in the middle is not highlighted. This is because the title requires a different keyword from the rest. In order to correctly capture that title without selecting too many unnecessary information, click on the title in the middle (see the green highlighted title) and then click the Top Stories header at the top. This will exclude the headers (see red highlighted) which was unintentionally included when clicking on the middle title. 
 
-![](../data/Picture6.jpg)
+![](https://github.com/AlcBa/Data-for-R-Programming/raw/main/assets/Picture6.jpg)
 
