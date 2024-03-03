@@ -1,0 +1,59 @@
+---
+title: "Data overview"
+output: 
+  rmdformats::readthedown:
+    highlight: tango
+    theme: cerulean
+    style: readable
+    fonttheme: readable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# List of datasets
+
+### ASEAN datasets
+
+A broad range of ASEAN related datasets can be found at <https://data.aseanstats.org/>, ranging from foreign direct investment statistics, international merchandise trade statistics, macroeconomics, SDG indicators, statistics of international trade in services, Transport statistics, visitor arrival statistics and labor statistics. 
+
+Click on the relevant dataset to download it locally (most in Excel format).
+
+
+### Environment data
+
+This dataset shows the energy usage for households, businesses, and industries in the City of Chicago during 2010. It also contains selected variables describing selected characteristics of the Census block population, physical housing, and occupancy. 
+
+The dataset can be downloaded over at <https://data.cityofchicago.org/Environment-Sustainable-Development/Energy-Usage-2010/8yq3-m6wp/about_data> by clicking the Export button on the top right-hand side of the webpage. 
+
+
+### Financial well-being survey data
+
+This dataset includes respondents’ scores on the [CFPB 10-item financial well-being scale](https://www.consumerfinance.gov/data-research/research-reports/financial-well-being-scale/), as well as measures of individual and household characteristics that research suggests may influence adults’ financial well-being, including:
+
+- Income and employment
+- Savings and safety nets
+- Past financial experiences
+- Financial behaviors, skills, and attitudes
+
+The dataset can be downloaded via <https://www.consumerfinance.gov/data-research/financial-well-being-survey-data/>. For a detailed data dictionary of the variables, refer to [this](https://www.consumerfinance.gov/documents/5586/cfpb_nfwbs-puf-codebook.pdf).
+
+
+### Terrorism data
+
+This dataset shows information of domestic and international terrorist attacks around the world from 1970 - 2017, which belongs to the Global Terrorism Database. The database is maintained by researchers at the National Consortium for the Study of Terrorism and Responses to Terrorism (START), headquartered at the University of Maryland.
+
+The dataset can be downloaded at <https://www.kaggle.com/datasets/START-UMD/gtd/data>. For a detailed data dictionary of the variables, refer to [this](https://www.start.umd.edu/gtd/downloads/Codebook.pdf).
+
+
+### Trade datasets
+
+This website <https://www.wto.org/english/res_e/statis_e/trade_datasets_e.htm> contains multiple trade related datasets from the World Trade Organisation, ranging from annual merchandise trade values and indices and annual trades in services. Refer to the website for further information.
+
+
+### Other datasets
+
+- Education in USA (<https://educationdata.urban.org/data-explorer/explorer>)
+- Home mortgage disclosure act (<https://ffiec.cfpb.gov/data-browser>)
+- USA Census (<https://data.census.gov/>)
